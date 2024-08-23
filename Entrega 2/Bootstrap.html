@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Bootstrap</title>
+    <!-- Bootstrap Entrega 2 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .texto-negro {
+            color: rgb(0, 0, 0); 
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="slide.jpg" alt="Imagen 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><span class="texto-negro">Yeezy Slide Onyx</span></h5>
+                    <p><span class="texto-negro">Las YEEZY SLIDE presentan un diseño moldeado por inyección de espuma de EVA que las hace livianas y resistentes al desgaste e incluyen una suave plantilla que garantiza una comodidad inmediata. El diseño de suela estriada y ubicada en una zona estratégica lleva la tracción y la comodidad al máximo nivel.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="sunset.jpg" alt="Imagen 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><span class="texto-negro">Nike Air Max Plus SUNSET</span></h5>
+                    <p><span class="texto-negro">Atardeceres tempranos y fogatas nocturnas: es la temporada perfecta para aportar energía renovada a tu experiencia Tuned Air. Disfruta de esta flamante edición de los Air Max Plus.</span></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="yeezy700.jpg" alt="Imagen 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><span class="texto-negro">Yeezy Boost 700 Enflame Amber</span></h5>
+                    <p><span class="texto-negro">Las adidas Yeezy Boost 700 'Enflame Amber' presentan tonos tierra apagados en la parte superior, confeccionada en malla transpirable beige con superposiciones de ante marrón oscuro en el mediopié. Una puntera beige tonal refuerza un inesperado toque de malla azul en la puntera. La amortiguación con capacidad de respuesta llega a través de una entresuela Boost de longitud completa, alojada en un soporte de EVA de color coral y visible a través de detalles recortados en la suela de goma de tracción en espiga.</span></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Texto en 2 Columnas -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Lanzamientos Nike Agosto</h2>
+                <p>Recientemente Nike ha realizado un dia de restocks de lanzamientos hype como las Jordan 3 "Rio" del cantante J Balvin, las SB Rayssa Leal por su reciente logro en las olimpiadas de Paris y por último las Jordan 4 Military Blue que son una re edición del lanzamiento en 2012.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Lanzamientos Adidas Agosto</h2>
+                <p>Anthony Edwards se toma el mes de Agosto en Adidas, con su reciente triunfo en las olimpiadas en Paris 2024, Edwards le regala al publico un nuevo colorway en su silueta AE1 y tambien deja ver un prototipo de su segundo proyecto junto a los Alemanes, estas deberan llegar a final de temporada segun el jugador de la NBA.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Texto en Accordion -->
+    <div class="container my-4">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tiendas Retail Chile
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <h2>BOLD</h2>
+                        EL MUNDO ESTÁ CAMBIANDO, NOSOTROS TAMBIÉN.
+                        BOLD MIND ES EL ESPACIO QUE HEMOS ABIERTO EN BOLD PARA MOSTRAR DIFERENTES VISIONES Y FORMAS DE INTERVENIR NUESTRO ALREDEDOR Y CON LA COMUNIDAD.
+                        AQUÍ ESTAREMOS PRESENTANDO A LAS PERSONAS, MOVIMIENTOS E HISTORIAS QUE CREEMOS RELEVANTES POR SU APORTE Y QUE NOS INSPIRAN A SEGUIR PROGRESANDO COMO SOCIEDAD.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Tiendas Resale Mundiales
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <h2>STOCKX</h2>
+                        StockX es un mercado en el que compradores y vendedores pueden hacer ofertas anónimas para una gran variedad de artículos como sneakers, streetwear, artículos electrónicos y coleccionables, en función de la valoración actual del artículo en el sito pero también de por cuánto estás dispuesto a venderlo. El carácter anónimo de StockX tiene como objetivo lograr que comprar y vender sea una experiencia sencilla y sin complicaciones: los compradores ven el precio de venta más bajo disponible, y los vendedores ven la mejor oferta disponible para sus productos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap usados -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
